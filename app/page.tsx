@@ -53,19 +53,19 @@ export default function Home() {
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  .page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  position: relative;
-  overflow: hidden;
-  background-image: url('/bg-nyeskoffie.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+        .page {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 24px;
+          position: relative;
+          overflow: hidden;
+          background-image: url('/bg-nyeskoffie.jpeg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
 
         .bg-blob-1 {
           position: absolute;
@@ -313,6 +313,29 @@ export default function Home() {
           border-radius: 12px;
           border: 1.5px solid #fccece;
           box-shadow: 0 2px 8px rgba(193,7,8,0.08);
+          margin-bottom: 16px;
+        }
+
+        .screenshot-note {
+          background: #fff7ed;
+          border: 1.5px solid #fed7aa;
+          border-radius: 10px;
+          padding: 12px 16px;
+          margin-top: 4px;
+        }
+
+        .screenshot-note p {
+          color: #c2410c;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 13px;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+
+        .screenshot-note span {
+          color: #9a3412;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 12px;
         }
 
         .voucher-note {
@@ -336,8 +359,8 @@ export default function Home() {
           <div className="promo-box">
             <div className="promo-label">Promo Eksklusif</div>
             <div className="promo-title">
-              BUY 1<br />
-              GET 1
+              BELI 1<br />
+              GRATIS 1
             </div>
             <div className="promo-sub">⏳ Hanya untuk 30 orang pertama</div>
           </div>
@@ -367,8 +390,15 @@ export default function Home() {
             <div className="voucher-box">
               <div className="voucher-icon">🎉</div>
               <div className="voucher-title">Promo Berhasil Diklaim!</div>
-              <div className="voucher-sub">Tunjukkan kode ini ke kasir:</div>
+              <div className="voucher-sub">Kode promo kamu:</div>
               <div className="voucher-code">{voucher}</div>
+              <div className="screenshot-note">
+                <p>📸 Screenshot halaman ini!</p>
+                <span>
+                  Tunjukkan kode promo ke kasir untuk mendapatkan minuman gratis
+                  kamu.
+                </span>
+              </div>
               <div className="voucher-note">
                 Hai <strong style={{ color: "#C10708" }}>{nama}</strong>,
                 selamat menikmati! ☕
