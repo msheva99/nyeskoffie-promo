@@ -340,6 +340,15 @@ export default function Home() {
           font-size: 12px;
         }
 
+        .location {
+          margin-top: 8px;
+          padding-top: 8px;
+          border-top: 1px solid #fed7aa;
+          color: #9a3412;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 11px;
+        }
+
         .voucher-note {
           color: #9ca3af;
           font-family: 'DM Sans', sans-serif;
@@ -397,6 +406,10 @@ export default function Home() {
               <div className="screenshot-note">
                 <p>📸 Screenshot halaman ini!</p>
                 <span>Dan tunjukkan kode promo ke kasir.</span>
+                <div className="location">
+                  📍 Jl.Mejobo, Mlati Norowito, Kec. Kota Kudus, Kabupaten
+                  Kudus, Jawa Tengah 59319
+                </div>
               </div>
               <div className="voucher-note">
                 Hai <strong style={{ color: "#C10708" }}>{nama}</strong>,
