@@ -42,7 +42,9 @@ export default function Home() {
       return;
     }
 
-    setVoucher("NYESKOFFIE-B1G1");
+    const kodeUnik =
+      "NYS-" + Math.random().toString(36).substring(2, 8).toUpperCase();
+    setVoucher(kodeUnik);
     setLoading(false);
   };
 
@@ -394,10 +396,7 @@ export default function Home() {
               <div className="voucher-code">{voucher}</div>
               <div className="screenshot-note">
                 <p>📸 Screenshot halaman ini!</p>
-                <span>
-                  Tunjukkan kode promo ke kasir untuk mendapatkan minuman gratis
-                  kamu.
-                </span>
+                <span>Dan tunjukkan kode promo ke kasir.</span>
               </div>
               <div className="voucher-note">
                 Hai <strong style={{ color: "#C10708" }}>{nama}</strong>,
