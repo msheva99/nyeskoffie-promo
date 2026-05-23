@@ -53,16 +53,19 @@ export default function Home() {
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
-        .page {
-          min-height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 24px;
-          position: relative;
-          overflow: hidden;
-          background: linear-gradient(145deg, #fff5f5 0%, #ffe4e4 40%, #fccece 100%);
-        }
+  .page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('/bg-nyeskoffie.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
         .bg-blob-1 {
           position: absolute;
